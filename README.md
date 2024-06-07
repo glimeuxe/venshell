@@ -11,14 +11,14 @@
 | `c <a>`             | Specifies a command named `c` with argument sequence `<a>` to be run at startup.                                                    |
 | `n=<v>`             | Specifies an environment variable named `n` to be “safely set”[^1] to value `<v>` at startup.                                       |
 | `LOCALE=EN/FR`      | Sets language to either English (`EN`) or French (`FR`) at startup.                                                                 |
-| `ARTFILENAME=a.txt` | Sets `sys` program art to contents of `a.txt` in ‘assets‘.<br>e.g. `ARTFILENAME=monalisa.txt`, where `monalisa.txt` is in ‘assets’. |
+| `ARTFILENAME=a.txt` | Sets `sys` program art to contents of `a.txt` in ‘assets‘.<br>Example: `ARTFILENAME=monalisa.txt`, where `monalisa.txt` is in ‘assets’. |
 
 ## Support
 - OSes: Almost any version of any sufficiently POSIX-compliant OS and/or distro (cf. https://en.wikipedia.org/wiki/POSIX#POSIX-oriented_operating_systems).
 - Languages: English and French, where English is the default language.
 
 ## Built-In Commands
-1. `cd <d>`: Changes current directory to filepath `<d>`.
+1. `cd <d>`: Changes current directory to (relative or absolute) filepath `<d>`.
 2. `env`: Lists venshell process environment variables.
 3. `exit`: Quits current venshell process.
 4. `help`: Lists venshell built-in commands.
