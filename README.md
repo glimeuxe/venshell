@@ -1,4 +1,4 @@
-# venshell
+# venshell[^0]
 ## Setup
 1. Download and extract the contents of this repository to a local directory.
 2. Optionally, re-compile “main.c” to overwrite “main” (e.g. using `gcc -o main main.c`).
