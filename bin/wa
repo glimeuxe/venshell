@@ -1,0 +1,41 @@
+#!/bin/bash
+
+VIEWER="display"
+
+BG="transparent"
+FG="white"
+
+[[ $WA_APPID ]] || {
+  if [[ "$LOCALE" = "FR" ]]; then
+    printf "vensh: ID d'application WA manquant\nObtenez-en un sur https://products.wolframalpha.com/api\n"
+  else
+    printf "vensh: Expected \$WA_APPID\nGet one at https://products.wolframalpha.com/api\n"
+  fi
+  exit 1
+}
+
+if [[ $1 = "-p" ]]; then
+  shift
+  curl -s -w '\n' "https://api.wolframalpha.com/v1/simple?appid=${WA_APPID}&units=metric&foreground=${FG}&background=${BG}" \
+    --data-urlencode "i=$*" | $VIEWER
+  exit 0
+fi
+
+RESPONSE=$(
+  curl -s "https://api.wolframalpha.com/v1/result?appid=${WA_APPID}&units=metric&" \
+    --data-urlencode "i=$*"
+)
+
+if [[ "No short answer available" = "$RESPONSE" ]]; then
+  if [[ "$LOCALE" = "FR" ]]; then
+    printf "vensh: Aucune réponse courte disponible, téléchargement de la réponse complète...\n"
+  else
+    printf "vensh: No short answer available, downloading full answer...\n"
+  fi
+  curl -s -w '\n' "https://api.wolframalpha.com/v1/simple?appid=${WA_APPID}&units=metric&foreground=${FG}&background=${BG}" \
+    --data-urlencode "i=$*" | $VIEWER
+else
+  printf '%s\n' "$RESPONSE"
+fi
+
+exit 0
