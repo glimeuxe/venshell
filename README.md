@@ -1,4 +1,4 @@
-# venshell[^1]
+# venshell[^0]
 ## Setup
 1. Download (and extract) the contents of this repository to a local directory.
 2. Optionally, re-compile “main.c” (e.g. using `gcc -o main main.c` if GCC is available).
@@ -23,8 +23,9 @@
 1. `dspawn`: Spawns a daemon that does nothing for 60 seconds before terminating.
 2. `dcheck`: Prints the number of daemons spawned by `dspawn`.
 3. `sys`: Lists username, OS name, CPU name, total RAM size (in MB), and kernel version, beside either the default text art (the contents of “art.txt” in ‘assets’), or custom text art (cf. [Configuration](#Configuration)).
-4. `elio q`: Queries the Library of Babel with `q` (cf. https://libraryofbabel.app/, https://en.wikipedia.org/wiki/The_Library_of_Babel).
-5. `wa q`: Queries WolframAlpha with `q` using WolframAlpha API key specified by environment variable `WA_APPID` (cf. [Configuration](#Configuration), https://github.com/archelaus/wolfram-alpha-cli/blob/main/README.md).
+4. `elio q`: Queries the Library of Babel with `q` (cf. https://libraryofbabel.app, https://en.wikipedia.org/wiki/The_Library_of_Babel).
+5. `trans args`: Translates (cf. https://github.com/soimort/translate-shell).
+6. `wa q`: Queries WolframAlpha with `q` using WolframAlpha API key specified by environment variable `WA_APPID` (cf. [Configuration](#Configuration), https://github.com/archelaus/wolfram-alpha-cli).
 
 ## Configuration
 | New Line                   | Action                                                                                |
@@ -36,4 +37,4 @@
 | `ARTFILENAME=filename.txt` | Sets art displayed by `sys` to (contents of) “filename.txt” in ‘assets‘.                   |
 | `WA_APPID=key`             | Sets WolframAlpha API key of `wa` to `key`.                                    |
 
-[^1]: Wrapping plaintext, single quotes (‘‘) specifies a directory name, where as double quotes (““) specifies a file name.
+[^0]: Wrapping plaintext, single quotes (‘‘) specifies a directory name, where as double quotes (““) specifies a file name.
