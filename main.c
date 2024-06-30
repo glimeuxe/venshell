@@ -310,7 +310,7 @@ int cmd_help(char** args)
 	else printf("vensh: Les commandes intégrées sont ");
 
 	for (int i = 0; i < C()-1; i++) printf("\"%s\", ", CMDS[i]);
-	printf("and \"%s\"\n", CMDS[C()-1]);
+	printf("\"%s\"\n", CMDS[C()-1]);
 	return 1;
 }
 

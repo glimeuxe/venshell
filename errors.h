@@ -41,13 +41,13 @@ void print_malloc_failure(void)
 
 void print_mkdir_failure(char* s)
 {
-	if (strcmp(getenv("LOCALE"), "FR") == 0) fprintf(stderr, "vensh: ???\n");
+	if (strcmp(getenv("LOCALE"), "FR") == 0) fprintf(stderr, "vensh: Échec de la création du répertoire %s\n", s);
 	else fprintf(stderr, "vensh: Failed to make directory %s\n", s);
 }
 
 void print_mv_failure(char* source, char* destination)
 {
-	if (strcmp(getenv("LOCALE"), "FR") == 0) fprintf(stderr, "vensh: ???");
+	if (strcmp(getenv("LOCALE"), "FR") == 0) fprintf(stderr, "vensh: Échec du déplacement de %s vers %s\n", source, destination);
 	else fprintf(stderr, "vensh: Failed to move %s to %s\n", source, destination);
 }
 
@@ -65,19 +65,19 @@ void print_setenv_failure(char* envreference, char* envvalue)
 
 void print_setsid_failure(void)
 {
-	if (strcmp(getenv("LOCALE"), "FR") == 0) fprintf(stderr, "vensh: ???");
+	if (strcmp(getenv("LOCALE"), "FR") == 0) fprintf(stderr, "vensh: Échec de la création de session\n");
 	else fprintf(stderr, "vensh: Failed to create session\n");
 }
 
 void print_system_failure(void)
 {
-	if (strcmp(getenv("LOCALE"), "FR") == 0) fprintf(stderr, "vensh: ???");
-	else fprintf(stderr, "vensh: Failed to run C system");
+	if (strcmp(getenv("LOCALE"), "FR") == 0) fprintf(stderr, "vensh: Échec de l'exécution du système\n");
+	else fprintf(stderr, "vensh: Failed to run system command\n");
 }
 
 void print_zip_failure(char* s)
 {
-	if (strcmp(getenv("LOCALE"), "FR") == 0) fprintf(stderr, "vensh: ???");
+	if (strcmp(getenv("LOCALE"), "FR") == 0) fprintf(stderr, "vensh: Échec de la compression du répertoire %s\n", s);
 	else fprintf(stderr, "vensh: Failed to zip directory %s\n", s);
 }
 
