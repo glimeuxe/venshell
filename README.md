@@ -23,18 +23,21 @@
 1. `dspawn`: Spawns a daemon that does nothing for 60 seconds before terminating.
 2. `dcheck`: Prints the number of daemons spawned by `dspawn`.
 3. `sys`: Lists username, OS name, CPU name, total RAM size (in MB), and kernel version, beside either the default text art (the contents of “art.txt” in ‘assets’), or custom text art (cf. [Configuration](#Configuration)).
-4. `elio q`: Queries the Library of Babel with `q` (cf. https://libraryofbabel.app, https://en.wikipedia.org/wiki/The_Library_of_Babel).
-5. `trans args`: Translates (cf. https://github.com/soimort/translate-shell).
-6. `wa q`: Queries WolframAlpha with `q` using WolframAlpha API key specified by environment variable `WA_APPID` (cf. [Configuration](#Configuration), https://github.com/archelaus/wolfram-alpha-cli).
+4. `backup`: Zips backup directory[^1] specified by environment variable `BACKUP_DIR` into filepath “backups/backup.zip”.
+5. `elio q`: Queries the Library of Babel with `q` (cf. https://libraryofbabel.app, https://en.wikipedia.org/wiki/The_Library_of_Babel).
+6. `trans args`: Translates (cf. https://github.com/soimort/translate-shell).
+7. `wa q`: Queries WolframAlpha with `q` using WolframAlpha API key specified by environment variable `WA_APPID` (cf. [Configuration](#Configuration), https://github.com/archelaus/wolfram-alpha-cli).
 
 ## Configuration
-| New Line                   | Action                                                                                |
-| -------------------------- | ------------------------------------------------------------------------------------- |
-| `cmd args`               | Specifies command named `cmd` with argument sequence `args` to be run on startup. |
-| `N=V`                      | Specifies environment variable named `N` to be set to value `V` on startup.        |
-| `LOCALE=EN`                | Sets language to English.                                                             |
-| `LOCALE=FR`                | Sets language to French.                                                              |
-| `ARTFILENAME=filename.txt` | Sets art displayed by `sys` to (contents of) “filename.txt” in ‘assets‘.                   |
-| `WA_APPID=key`             | Sets WolframAlpha API key of `wa` to `key`.                                    |
+| New Line                   | Action                                                                            |
+| -------------------------- | --------------------------------------------------------------------------------- |
+| `cmd args`                 | Specifies command named `cmd` with argument sequence `args` to be run on startup. |
+| `N=V`                      | Specifies environment variable named `N` to be set to value `V` on startup.       |
+| `LOCALE=EN`                | Sets language to English.                                                         |
+| `LOCALE=FR`                | Sets language to French.                                                          |
+| `ARTFILENAME=filename.txt` | Sets art displayed by `sys` to (contents of) “filename.txt” in ‘assets‘.          |
+| `WA_APPID=key`             | Sets WolframAlpha API key of `wa` to `key`.                                       |
+| `BACKUP_DIR=dir`           | Sets backup directory[^1] to ‘dir’.                                               |
 
 [^0]: Wrapping plaintext, single quotes (‘‘) specifies a directory name, where as double quotes (““) specifies a file name.
+[^1]: The backup directory is the directory to be zipped.
