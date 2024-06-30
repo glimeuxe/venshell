@@ -37,7 +37,7 @@
 | `LOCALE=FR`                | Sets language to French.                                                          |
 | `ARTFILENAME=filename.txt` | Sets art displayed by `sys` to (contents of) “filename.txt” in ‘assets‘.          |
 | `WA_APPID=key`             | Sets WolframAlpha API key of `wa` to `key`.                                       |
-| `BACKUP_DIR=dir`           | Sets backup directory[^1] to ‘dir’.                                               |
+| `BACKUP_DIR=dir`           | Sets backup directory[^1] to absolute directorypath ‘dir’.                        |
 
-[^0]: Wrapping plaintext, single quotes (‘‘) specifies a directory name, where as double quotes (““) specifies a file name.
+[^0]: Wrapping plaintext, single quotes (‘‘) are used to specify either a directory name or directorypath, and double quotes (““) are used to specify either a file name or filepath.
 [^1]: The backup directory is the directory to be zipped.
