@@ -1,4 +1,4 @@
-# venshell[^0]
+# Venshell[^0]
 ## Disclaimer
 Venshell is provided as-is, and while efforts have been made to ensure its reliability and security, it has only been tested on MacOS Sonoma and later versions. Users are encouraged to review the source code for transparency and to ensure it meets their security standards. Feedback, bug reports, and contributions are welcome to improve compatibility and reliability across different platforms.
 
