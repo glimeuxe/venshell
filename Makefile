@@ -1,12 +1,12 @@
 BIN_EXECUTABLES := $(patsubst bin/%.c, bin/%, $(wildcard bin/*.c))
 
-all: main $(BIN_EXECUTABLES)
+all: vensh $(BIN_EXECUTABLES)
 
-main: main.c
-	gcc -o main main.c
+vensh: vensh.c
+	gcc -o vensh vensh.c
 
 bin/%: bin/%.c
 	gcc -o $@ $<
 
 clean:
-	rm -rf main $(BIN_EXECUTABLES)
+	rm -rf vensh $(BIN_EXECUTABLES)
