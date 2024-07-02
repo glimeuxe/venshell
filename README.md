@@ -4,7 +4,7 @@ Venshell is provided as-is, and while efforts have been made to ensure its relia
 
 ## Setup
 1. Download (and extract) the contents of this repository to a local directory.
-2. For safety, re-compile each downloaded C file (e.g. by ensuring `make` is installed, navigating to the directory on terminal, and entering `make`)
+2. For safety, re-compile each downloaded C file (e.g. by having `make` program (cf. https://www.gnu.org/software/make/) installed, navigating to the directory on terminal, and entering `make`).
 3. Run “vensh”, and grant permissions whenever prompted.
 4. Optionally, modify “vensh.rc” to configure venshell (cf. [Configuration](#Configuration)).
 
