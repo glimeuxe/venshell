@@ -338,7 +338,7 @@ int cmd_cd(char** args)
 // Print list of built-in commands.
 int cmd_help(char** args)
 {
-	if (strcmp(getenv("LOCALE"), "EN") == 0) printf("vensh: Les commandes intégrées sont ");
+	if (strcmp(getenv("LOCALE"), "FR") == 0) printf("vensh: Les commandes intégrées sont ");
 	else printf("vensh: Built-in commands are ");
 	for (int i = 0; i < C()-1; i++) printf("\"%s\", ", CMDS[i]);
 	printf("\"%s\"\n", CMDS[C()-1]);
