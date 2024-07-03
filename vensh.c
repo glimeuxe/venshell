@@ -508,7 +508,8 @@ int run_rc(char* rcfilename)
 	return 0;
 }
 
-int append_env_to_rc(char *envreference, char *envvalue) {
+int append_env_to_rc(char *envreference, char *envvalue)
+{
 	FILE *rcfile = fopen("vensh.rc", "a+");
 	if (rcfile == NULL) {print_fopen_failure("vensh.rc"); return 1;}
 
@@ -533,7 +534,8 @@ int append_env_to_rc(char *envreference, char *envvalue) {
 	return 0;
 }
 
-char* slice(char* s, int i) {
+char* slice(char* s, int i)
+{
 	int l = 0;
 	while (s[i] != '\0' && s[i] != '\n') {l++; i++;}
 	char *extracted = (char*) malloc(l + 1);
