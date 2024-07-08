@@ -1,6 +1,6 @@
-# Venshell[^0]
+# venshell[^0]
 ## Disclaimer
-Venshell is provided as-is, and while efforts have been made to ensure its reliability and security, it has only been tested on MacOS Sonoma and later versions. Users are encouraged to review the source code for transparency and to ensure it meets their security standards. Feedback, bug reports, and contributions are welcome to improve compatibility and reliability across different platforms.
+venshell is provided as-is, and while efforts have been made to ensure its reliability and security, it has only been tested on MacOS Sonoma and later versions. Users are encouraged to review the source code for transparency and to ensure it meets their security standards. Feedback, bug reports, and contributions are welcome to improve compatibility and reliability across different platforms.
 
 ## Setup
 1. Download (and extract) the contents of this repository to a local directory.
@@ -9,7 +9,7 @@ Venshell is provided as-is, and while efforts have been made to ensure its relia
 4. Optionally, modify “vensh.rc” to configure venshell (cf. [Configuration](#Configuration)).
 
 ## Support
-Venshell should be able to run on virtually any sufficiently modern POSIX-compliant OS (cf. https://en.wikipedia.org/wiki/POSIX#POSIX-oriented_operating_systems) with pre-installed system program “zip”.
+venshell should be able to run on virtually any sufficiently modern POSIX-compliant OS (cf. https://en.wikipedia.org/wiki/POSIX#POSIX-oriented_operating_systems) with pre-installed system program “zip”.
 
 ## Built-In Commands
 1. `cd f`: Changes current directory to filepath `f`.
@@ -42,7 +42,7 @@ Venshell should be able to run on virtually any sufficiently modern POSIX-compli
 | `BACKUP_DIR=dir`           | Sets backup (source) directory[^1] to absolute directorypath ‘dir’.                        |
 
 ## Other Features
-1. Non-transient prompt with current working directorypath display: venshell prompt is displayed after every command run, and contains directorypath to current working directory.
+1. Instant prompt with current working directorypath display: venshell prompt is displayed after every command run, and contains directorypath to current working directory.
 2. Configurability for pre-defined environment variables: Environment variables for locale, `sys` program art file, WolframAlpha API key, and backup (source) directory can be configured.
 3. Idle timeout: For efficiency, venshell (automatically) exits when no command has run in last 5-minute window.
 4. Accessible text colours: venshell uses combination of blue and pink text colours for prompt, green text colour for success messages, and red text colour for error messages.
