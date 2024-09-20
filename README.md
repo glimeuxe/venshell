@@ -1,9 +1,8 @@
 # venshell[^0]
 
 ## Setup
-1. Download and extract the contents of this repository to a local directory.
-2. For safety, re-compile each C file (e.g. using `make` (cf. https://www.gnu.org/software/make/)).
-3. Ensure “vensh” is executable.
+1. For safety, re-compile each C file.
+2. Ensure “vensh” is executable.
 
 ## Usage
 1. Run “vensh”.
