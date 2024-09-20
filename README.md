@@ -47,7 +47,7 @@ venshell supports POSIX-compliant OSes (cf. https://en.wikipedia.org/wiki/POSIX#
 2. Configurability for pre-defined environment variables: Environment variables for locale, `sys` program art file, WolframAlpha API key, and backup (source) directory can be configured.
 3. Idle timeout: For efficiency, venshell (automatically) exits when no command has run in last 5-minute window.
 4. Accessible text colours: venshell uses combination of blue and pink text colours for prompt, green text colour for success messages, and red text colour for error messages.
-5. Multi-language support: venshell (mostly) supports English and French.
+5. Multilingual support: venshell supports English and French.
 
 
 [^0]: Wrapping plaintext, single quotes (‘‘) are used to specify either a directory name or directorypath, and double quotes (““) are used to specify either a file name or filepath.
