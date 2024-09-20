@@ -1,15 +1,16 @@
 # venshell[^0]
-## Disclaimer
-venshell is provided as-is, and while efforts have been made to ensure its reliability and security, it has only been tested on MacOS Sonoma and later versions. Users are encouraged to review the source code for transparency and to ensure it meets their security standards. Feedback, bug reports, and contributions are welcome to improve compatibility and reliability across different platforms.
 
 ## Setup
-1. Download (and extract) the contents of this repository to a local directory.
-2. For safety, re-compile each downloaded C file (e.g. by having `make` program (cf. https://www.gnu.org/software/make/) installed, navigating to the directory on terminal, and entering `make`).
-3. Run “vensh”, and grant permissions whenever prompted.
-4. Optionally, modify “vensh.rc” to configure venshell (cf. [Configuration](#Configuration)).
+1. Download and extract the contents of this repository to a local directory.
+2. For safety, re-compile each C file (e.g. using `make` (cf. https://www.gnu.org/software/make/)).
+3. Ensure “vensh” is executable.
+
+## Usage
+1. Run “vensh”.
+2. Optionally, modify “vensh.rc” to configure venshell (cf. [Configuration](#Configuration)).
 
 ## Support
-venshell should be able to run on virtually any sufficiently modern POSIX-compliant OS (cf. https://en.wikipedia.org/wiki/POSIX#POSIX-oriented_operating_systems) with pre-installed system program “zip”.
+venshell supports POSIX-compliant OSes (cf. https://en.wikipedia.org/wiki/POSIX#POSIX-oriented_operating_systems).
 
 ## Built-In Commands
 1. `cd f`: Changes current directory to filepath `f`.
@@ -31,15 +32,15 @@ venshell should be able to run on virtually any sufficiently modern POSIX-compli
 7. `wa q`: Queries WolframAlpha with `q` using WolframAlpha API key specified by environment variable `WA_APPID` (cf. [Configuration](#Configuration), https://github.com/archelaus/wolfram-alpha-cli).
 
 ## Configuration
-| Line                   | Action                                                                            |
+| Line                       | Action                                                                            |
 | -------------------------- | --------------------------------------------------------------------------------- |
 | `cmd args`                 | Specifies command named `cmd` with argument sequence `args` to be run on startup. |
 | `N=V`                      | Specifies environment variable named `N` to be set to value `V` on startup.       |
 | `LOCALE=EN`                | Sets language to English.                                                         |
 | `LOCALE=FR`                | Sets language to French.                                                          |
-| `ARTFILENAME=filename.txt` | Sets `sys` program art to (contents of) “filename.txt” in ‘assets‘.          |
+| `ARTFILENAME=filename.txt` | Sets `sys` program art to (contents of) “filename.txt” in ‘assets‘.               |
 | `WA_APPID=key`             | Sets WolframAlpha API key of `wa` to `key`.                                       |
-| `BACKUP_DIR=dir`           | Sets backup (source) directory[^1] to absolute directorypath ‘dir’.                        |
+| `BACKUP_DIR=dir`           | Sets backup (source) directory[^1] to absolute directorypath ‘dir’.               |
 
 ## Other Features
 1. Instant prompt with current working directorypath display: venshell prompt is displayed after every command run, and contains directorypath to current working directory.
