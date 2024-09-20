@@ -1,5 +1,8 @@
 # venshell[^0]
 
+## Preview
+https://github.com/user-attachments/assets/9f6c8a31-7a25-4c98-ba55-f364300ea1ab
+
 ## Setup
 1. For safety, re-compile each C file.
 2. Ensure “vensh” is executable.
