@@ -1,7 +1,7 @@
 # venshell[^0]
 
 ## Preview
-https://github.com/user-attachments/assets/9f6c8a31-7a25-4c98-ba55-f364300ea1ab
+![](https://github.com/user-attachments/assets/c68e7c8b-8083-4597-8a01-44fac27513c4)
 
 ## Setup
 1. For safety, re-compile each C file.
